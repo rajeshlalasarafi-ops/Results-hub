@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Results Hub India</title>
+<style>
+:root{--bg:#f3f5fb;--card:#fff;--tx:#10193a;--mu:#64709a;--ac:#4f46e5;--bd:#e4e8f4;--sh:0 4px 14px rgba(40,50,110,.08);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1020;--card:#171e38;--tx:#eef1ff;--mu:#98a3cc;--ac:#8b85ff;--bd:#27315a;--sh:none}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.w{max-width:600px;margin:0 auto;padding-bottom:30px}
+.hero{background:linear-gradient(135deg,#4f46e5,#7c3aed 55%,#db2777);color:#fff;padding:20px 16px 18px;border-radius:0 0 26px 26px}
+.br{display:flex;align-items:center;gap:12px}.br h1{margin:0;font-size:22px;line-height:1.1}.br p{margin:2px 0 0;font-size:13px;opacity:.9}
+.cd{display:flex;align-items:center;gap:6px;margin-top:12px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:6px 8px}
+.cd small{flex:1;font-size:10px;line-height:1.2}.cd small b{display:block;font-size:12px}
+.cd .u{background:rgba(255,255,255,.2);border-radius:8px;padding:2px 0;min-width:36px;text-align:center}.cd .u b{display:block;font-size:14px;line-height:1.2}.cd .u i{font-style:normal;font-size:8px;opacity:.9}
+.ct{padding:0 16px}
+.sr{margin:16px 0 4px;position:relative}.sr input{width:100%;padding:13px 14px 13px 40px;border-radius:14px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font-size:16px;box-shadow:var(--sh)}.sr span{position:absolute;left:14px;top:12px;font-size:17px}
+.tabs{display:flex;gap:6px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:4px;margin:14px 0;box-shadow:var(--sh)}
+.tabs button{flex:1;border:0;background:none;color:var(--mu);font:600 14px system-ui;padding:10px 4px;border-radius:10px;cursor:pointer}
+.tabs button.on{background:var(--ac);color:#fff}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.k{display:block;background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px;text-decoration:none;color:var(--tx);box-shadow:var(--sh)}
+.k .ic{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:10px}
+.k b{display:block;font-size:14px;line-height:1.25}.k span{display:block;font-size:12px;color:var(--mu);margin-top:3px}.k em{display:block;font-style:normal;font-size:12px;color:var(--ac);font-weight:600;margin-top:8px}
+.k.f{grid-column:1/-1;display:flex;align-items:center;gap:12px}.k.f .ic{margin:0;flex:none}
+.d{background:var(--card);border:1px solid var(--bd);border-left:5px solid var(--c);border-radius:14px;padding:12px 14px;margin-bottom:10px;box-shadow:var(--sh)}
+.d b{font-size:15px}.d p{margin:4px 0 8px;font-size:14px}.t{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px;background:var(--c);color:#fff}
+.sel{width:100%;padding:13px;border-radius:14px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font-size:16px;margin-bottom:12px}
+.mo{position:fixed;inset:0;background:rgba(8,12,30,.55);display:flex;align-items:center;justify-content:center;padding:20px;z-index:50}.mo.hide{display:none}.bx{background:var(--card);color:var(--tx);border-radius:22px;padding:22px;width:100%;max-width:340px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.35)}.bx .ic{font-size:34px}.bx h3{margin:8px 0 4px;font-size:18px}.bx p{margin:4px 0;font-size:14px;color:var(--mu)}.bx .h{display:inline-block;margin:8px 0;padding:6px 12px;border-radius:10px;background:var(--bg);font-weight:700;font-size:14px;word-break:break-all;color:var(--tx)}.bx a.go{display:block;margin-top:14px;padding:13px;border-radius:12px;background:var(--ac);color:#fff;font-weight:700;text-decoration:none}.bx button{width:100%;margin-top:8px;padding:12px;border:0;border-radius:12px;background:none;color:var(--mu);font:600 15px system-ui;cursor:pointer}.n{font-size:12px;color:var(--mu);line-height:1.5;margin:14px 2px 0}.hide{display:none}
+</style></head><body><div class="w">
+<div class="hero"><div class="br"><svg width="46" height="46" viewBox="0 0 40 40" aria-label="Results Hub logo"><rect width="40" height="40" rx="11" fill="#fff"/><rect x="9" y="22" width="5" height="9" rx="1.5" fill="#a5b4fc"/><rect x="17.5" y="16" width="5" height="15" rx="1.5" fill="#818cf8"/><rect x="26" y="10" width="5" height="21" rx="1.5" fill="#4f46e5"/></svg><div><h1>Results Hub India</h1><p>Results &amp; exam dates in one place</p></div></div><div id="cd"></div></div>
+<div class="ct">
+<div class="sr"><span>🔍</span><input id="q" placeholder="Search CBSE, NEET, JEE, EAPCET…" oninput="draw()"></div>
+<div class="tabs"><button class="on" onclick="tab(0)">Results</button><button onclick="tab(1)">Exam dates</button><button onclick="tab(2)">State boards</button></div>
+<div id="p0"><div class="g" id="out"></div></div>
+<div id="p1" class="hide"><div id="dt"></div></div>
+<div id="p2" class="hide"><select id="st" class="sel" onchange="draw()"></select><div class="g" id="sb"></div></div>
+<p class="n">This app only links to official websites; results are shown there, not here. Check the web address before entering your hall ticket number. If a link fails, use results.gov.in.</p>
+</div></div>
+<script>
+function $(i){return document.getElementById(i)}
+var A=[["🇮🇳","National Results Portal","All boards and exams","https://results.gov.in","#4f46e5",1],
+["🗂️","DigiLocker","Marksheets, boards and universities","https://results.digilocker.gov.in","#0ea5e9",1],
+["📗","CBSE 10th and 12th","Central board","https://cbseresults.nic.in","#16a34a"],
+["🩺","NEET UG","Medical entrance","https://neet.nta.nic.in","#e11d48"],
+["⚙️","JEE Main","Engineering entrance","https://jeemain.nta.nic.in","#f59e0b"],
+["🎓","CUET UG","University entrance","https://cuet.nta.nic.in","#7c3aed"],
+["🏛️","Degree","Check DigiLocker or your university","https://results.digilocker.gov.in","#0d9488"],
+["⚙️","EAPCET (EMCET) TS","Telangana","https://tgeapcet.nic.in","#ea580c"],
+["⚙️","EAPCET (EMCET) AP","Andhra Pradesh","https://cets.apsche.ap.gov.in","#db2777"],
+["🔧","POLYCET TS","Telangana","https://polycet.sbtet.telangana.gov.in","#2563eb"],
+["🔧","POLYCET AP","Andhra Pradesh","https://polycetap.nic.in","#65a30d"]];
+var S={"Andhra Pradesh":["https://bse.ap.gov.in","https://bie.ap.gov.in"],"Telangana":["https://bse.telangana.gov.in","https://tgbie.cgg.gov.in"],"Karnataka":["https://karresults.nic.in"],"Tamil Nadu":["https://tnresults.nic.in"],"Kerala":["https://keralaresults.nic.in"],"Maharashtra":["https://mahresult.nic.in"],"Gujarat":["https://gseb.org"],"Rajasthan":["https://rajresults.nic.in"],"Madhya Pradesh":["https://mpresults.nic.in"],"West Bengal":["https://wbresults.nic.in"],"Uttar Pradesh":["https://upmsp.edu.in"],"Other state":["https://results.gov.in"]};
+function card(a){return '<a class="k'+(a[5]?' f':'')+'" href="'+a[3]+'" target="_blank" rel="noopener"><div class="ic" style="background:'+a[4]+'22">'+a[0]+'</div><div><b>'+a[1]+'</b><span>'+a[2]+'</span>'+(a[5]?'':'<em>Open official site ↗</em>')+'</div></a>'}
+$("st").innerHTML=Object.keys(S).map(function(k){return "<option>"+k+"</option>"}).join("");
+function draw(){var q=$("q").value.toLowerCase();
+$("out").innerHTML=A.filter(function(a){return (a[1]+a[2]).toLowerCase().indexOf(q)>-1}).map(card).join("")||'<p class="n">No match. Try another word.</p>';
+var n=$("st").value,s=S[n];
+$("sb").innerHTML=card(["🎓","SSC (10th)",n,s[0],"#4f46e5"])+card(["📘","Intermediate (12th)",n,s[s.length-1],"#db2777"])}
+function tab(i){[0,1,2].forEach(function(x){$("p"+x).classList.toggle("hide",x!=i)});var b=document.querySelectorAll(".tabs button");for(var j=0;j<b.length;j++)b[j].classList.toggle("on",j==i)}
+var D=[["JEE Main 2027, Session 1","20–24 and 28 Jan 2027","Listed by NTA (tentative)","#4f46e5"],["JEE Main 2027, Session 2","2–7 Apr 2027","Listed by NTA (tentative)","#4f46e5"],["NEET UG 2027","Usually first Sunday of May","Not announced","#6b7280"],["CUET UG 2027","Not in NTA calendar yet","Not announced","#6b7280"],["CBSE Class 10 and 12","From Feb 2027; practicals Jan; Class 10 second exam May","Date sheet awaited","#d97706"],["Telangana SSC","Expected Mar–Apr 2027","Timetable awaited","#d97706"],["Andhra Pradesh SSC","Expected Mar 2027","Timetable awaited","#d97706"],["Telangana Intermediate","Practicals late Jan; theory late Feb–Mar 2027","Timetable awaited","#d97706"],["TG EAPCET (EMCET)","Expected May–Jun 2027","Not announced","#6b7280"],["AP EAPCET and POLYCET","Not announced","Check official site","#6b7280"],["Degree exams","Differs by university","Check your university","#6b7280"]];
+$("dt").innerHTML=D.map(function(d){return '<div class="d" style="--c:'+d[3]+'"><b>'+d[0]+'</b><p>'+d[1]+'</p><span class="t">'+d[2]+'</span></div>'}).join("")+'<p class="n">Checked on 2 Nov 2026. Purple dates come from NTA and can change. Orange and grey are expected or unannounced, so do not rely on them. Always confirm on the official website.</p>';
+var T=[["JEE Main Session 1","2027-01-20T09:00:00+05:30"],["JEE Main Session 2","2027-04-02T09:00:00+05:30"]];
+function tick(){var now=Date.now(),t=null;for(var i=0;i<T.length;i++){if(new Date(T[i][1]).getTime()>now){t=T[i];break}}
+if(!t){$("cd").innerHTML="";return}
+var ms=new Date(t[1]).getTime()-now,v=[Math.floor(ms/864e5),Math.floor(ms%864e5/36e5),Math.floor(ms%36e5/6e4),Math.floor(ms%6e4/1e3)],l=["days","hrs","min","sec"];
+$("cd").innerHTML='<div class="cd"><small>Next exam<b>'+t[0]+'</b></small>'+v.map(function(x,i){return '<div class="u"><b>'+x+'</b><i>'+l[i]+'</i></div>'}).join("")+'</div>'}
+draw();tick();setInterval(tick,1000);
+</script></body></html>
